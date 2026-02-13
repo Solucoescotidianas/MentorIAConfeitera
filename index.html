@@ -3,96 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentora IA - Confeitaria</title>
+    <title>Mentora IA - Confeitaria Lucrativa</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4409859999294540');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4409859999294540&ev=PageView&noscript=1"
+    /></noscript>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Reset de Estilo */
+        /* Estilos Gerais */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #fdfaf8; /* Fundo suave creme */
+            background-color: #fdfaf8; 
             color: #333;
             line-height: 1.6;
+            text-align: center;
         }
 
-        /* Cabeçalho Impactante */
         header {
             background: linear-gradient(135deg, #4a1a4c 0%, #6d2d73 100%);
             color: white;
-            padding: 60px 20px;
-            text-align: center;
+            padding: 50px 20px;
             border-bottom: 5px solid #ffcc00;
         }
 
         .container { max-width: 500px; margin: 0 auto; padding: 20px; }
 
-        h1 { font-size: 26px; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; }
+        h1 { font-size: 24px; text-transform: uppercase; margin-bottom: 15px; line-height: 1.2; }
         .highlight { color: #ffcc00; }
 
-        /* Card de Oferta */
+        /* Card Principal */
         .main-card {
             background: white;
             margin-top: -30px;
             border-radius: 20px;
             padding: 30px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            text-align: center;
         }
 
-        .benefit-list { text-align: left; margin: 20px 0; list-style: none; }
-        .benefit-list li { margin-bottom: 12px; font-size: 16px; display: flex; align-items: center; }
-        .benefit-list li::before { content: '✨'; margin-right: 10px; }
+        .benefit-list { text-align: left; margin: 25px 0; list-style: none; }
+        .benefit-list li { margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; }
+        .benefit-list li::before { content: '✅'; margin-right: 12px; }
 
-        /* O BOTÃO (ESTILO CANVA) - FORÇANDO CORES */
+        /* BOTÃO DE COMPRA - CONFIGURADO PARA NÃO FICAR BRANCO */
         .cta-wrapper { margin: 30px 0; }
         
         .btn-link {
             display: block;
-            background-color: #28a745 !important; /* VERDE FORÇADO */
-            color: #ffffff !important; /* TEXTO BRANCO FORÇADO */
+            background-color: #28a745 !important; /* Verde Sucesso */
+            color: #ffffff !important; /* Texto Branco Forçado */
             text-decoration: none !important;
-            padding: 22px 10px;
+            padding: 20px 10px;
             font-size: 18px;
             font-weight: bold;
             border-radius: 12px;
             text-transform: uppercase;
-            box-shadow: 0 8px 0 #1e7e34;
+            box-shadow: 0 6px 0 #1e7e34;
             transition: all 0.2s;
             animation: pulse 1.5s infinite;
         }
 
-        .btn-link:active { transform: translateY(4px); box-shadow: 0 2px 0 #1e7e34; }
-
         @keyframes pulse {
             0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
+            50% { transform: scale(1.04); }
             100% { transform: scale(1); }
         }
 
-        .price-container { margin-bottom: 10px; }
-        .old-price { text-decoration: line-through; color: #888; font-size: 16px; }
-        .new-price { font-size: 36px; font-weight: bold; color: #4a1a4c; display: block; }
+        .btn-link:hover { background-color: #218838 !important; }
 
-        footer { text-align: center; padding: 40px; font-size: 12px; color: #aaa; }
+        /* Preço */
+        .price-container { margin-bottom: 5px; }
+        .old-price { text-decoration: line-through; color: #888; font-size: 16px; }
+        .new-price { font-size: 38px; font-weight: bold; color: #4a1a4c; display: block; margin-top: 5px; }
+
+        footer { padding: 40px; font-size: 11px; color: #aaa; background-color: #f4f4f4; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>Cansada de não vender? <span class="highlight">Use IA na sua Confeitaria!</span></h1>
-            <p>Tenha legendas e estratégias prontas em segundos.</p>
+            <h1>Cansada de não vender? Ative sua <span class="highlight">Mentora IA de Confeitaria!</span></h1>
+            <p>Tenha legendas e estratégias prontas em segundos direto no seu celular.</p>
         </div>
     </header>
 
     <div class="container">
         <div class="main-card">
             <ul class="benefit-list">
-                <li>Legendas que geram desejo</li>
-                <li>Roteiros de stories prontos</li>
-                <li>Scripts de vendas p/ WhatsApp</li>
-                <li>Mais tempo na cozinha, menos no celular</li>
+                <li><b>Legendas</b> que geram desejo imediato</li>
+                <li><b>Roteiros de Stories</b> para vender todo dia</li>
+                <li><b>Scripts</b> para fechar vendas no WhatsApp</li>
+                <li><b>Estratégias</b> para atrair novos clientes</li>
             </ul>
 
             <div class="price-container">
@@ -102,16 +117,17 @@
 
             <div class="cta-wrapper">
                 <a href="https://pay.kiwify.com.br/ecyxekO" class="btn-link">
-                    Quero Ativar Minha Mentora IA
+                    QUERO MINHA MENTORA IA AGORA
                 </a>
             </div>
             
-            <p style="font-size: 12px; color: #777;">Acesso imediato após o pagamento</p>
+            <p style="font-size: 12px; color: #777;">Acesso imediato e vitalício. Pagamento único.</p>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Mentora IA Confeitaria - Todos os direitos reservados.
+        <p>&copy; 2026 Mentora IA Confeitaria - CNPJ Protegido - Todos os direitos reservados.</p>
+        <p style="margin-top: 10px;">Este site não faz parte do Facebook ou da Meta Platforms, Inc.</p>
     </footer>
 
 </body>
